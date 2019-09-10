@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Journalist profile</title>
+		<title>Journalist view status</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -11,9 +11,9 @@
 	<body>
           <div class="topnav" >
 	  <a href="jprofile.jsp">Home</a>
-	  <a class="active" href="jviewprofile.jsp">View Profile</a>
+	  <a href="jviewprofile.jsp">View Profile</a>
 	  <a href="jaddnews.jsp">Add News</a>
-	  <a href="jviewstatus.jsp">View Status</a>
+	  <a class="active" href="jviewstatus.jsp">View Status</a>
 	  <a href="jlogout.jsp">Logout</a>
           </div>
                 <%

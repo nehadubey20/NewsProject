@@ -16,7 +16,7 @@
 	  <a href="eprofile.jsp">Home</a>
 	  <a href="jviewprofile.jsp">View Profile</a>
 	  <a href="jaddnews.jsp">----</a>
-	  <a href="#">View Status</a>
+	  <a href="jviewstatus.jsp">View Status</a>
 	  <a href="jlogout.jsp">Logout</a>
           </div>
                 <%

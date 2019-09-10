@@ -13,7 +13,7 @@
 	</head>
 	<body>
           <div class="topnav" >
-	  <a href="jprofile.jsp">Home</a>
+	  <a class="active" href="jprofile.jsp">Home</a>
 	  <a href="jviewprofile.jsp">View Profile</a>
 	  <a href="jaddnews.jsp">Add News</a>
 	  <a href="jviewstatus.jsp">View Status</a>
