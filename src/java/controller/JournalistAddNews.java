@@ -34,7 +34,7 @@ public class JournalistAddNews extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException 
     {
         
-        String username=req.getParameter("username");
+        //String username=req.getParameter("username");
         String category=req.getParameter("category");
         String postname=req.getParameter("postname");
         String description=req.getParameter("description");
@@ -46,14 +46,13 @@ public class JournalistAddNews extends HttpServlet {
         {
             Connection con=DBConnector.getConnection();
             Statement st=con.createStatement();
-            PreparedStatement pst=con.prepareStatement("insert into jaddnews values('"+username+"',?,?,?,?,?,?)");
-            pst.setString(1,username);
-            pst.setString(2,category);
-            pst.setString(3,postname);
-            pst.setString(4,description);
-            pst.setString(5,location); 
-            pst.setString(6,keyword);
-            pst.setString(7,image);
+            PreparedStatement pst=con.prepareStatement("insert into jaddnews values(?,?,?,?,?,?)");
+            pst.setString(1,category);
+            pst.setString(2,postname);
+            pst.setString(3,description);
+            pst.setString(4,location); 
+            pst.setString(5,keyword);
+            pst.setString(6,image);
             
             int i=pst.executeUpdate();
             if(i>0)

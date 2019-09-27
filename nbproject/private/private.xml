@@ -3,12 +3,20 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/src/java/dto/JAddNewsDTO.java</file>
-            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/src/java/controller/JournalistAddNews.java</file>
-            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/src/java/dao/JournalistAddNewsDAO.java</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/editor.html</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/journalist.html</file>
             <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/jviewprofile.jsp</file>
-            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/jaddnews.jsp</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/jregister.html</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/jlogout.jsp</file>
             <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/jviewstatus.jsp</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/jprofile.jsp</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/src/java/dto/JAddNewsDTO.java</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/eprofile.jsp</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/src/java/controller/JournalistAddNews.java</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/eviewprofile.jsp</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/src/java/model/JournalistRegisterAuthenticator.java</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/eregister.html</file>
+            <file>file:/C:/Users/NEHA/Documents/NetBeansProjects/NewsProject/web/jaddnews.jsp</file>
         </group>
     </open-files>
 </project-private>

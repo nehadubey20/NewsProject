@@ -20,10 +20,10 @@
         //String username=(String)session.getAttribute("username");
         
                     
-        String username=(String)session.getAttribute("username");
-        if(username==null || username.trim().equals(""))
+        String postname=(String)session.getAttribute("postname");
+        if(postname==null || postname.trim().equals(""))
         {
-            response.sendRedirect("journalist.html");
+            response.sendRedirect("jaddnews.jsp");
         }
         %>
         <!-- Banner -->
@@ -36,52 +36,50 @@
 						<br>                         
               <%
               JournalistAddNewsDAO jaddnewsDAO=new JournalistAddNewsDAO();
-              JAddNewsDTO jaddnewsDTO=jaddnewsDAO.getSpecificUserData(username);
+              JAddNewsDTO jaddnewsDTO=jaddnewsDAO.getSpecificUserData(postname);
               %>                 
                    <!-- Form -->
                    <div>
-                   <form action="JournalistAddNews" method="post">
+                  <form action="JournalistAddNews" method="post">  
                    <table class="table-wrapper">
-                 <tr>
+                     <tr>
                     <td><B>Username:</B></td>
                     <td>
                     <INPUT TYPE="text" disabled name="username" value="<%=jaddnewsDTO.getUsername()%>" />
                     </td>
                 </tr>
-                
-                
-                
+                -->
                 
                 <tr>
                     <td><B>Category:</B></td>
                     <td>
-                    <INPUT TYPE="text" disabled name="category" value="<%=jaddnewsDTO.getCategory()%>" />
+                    <%=jaddnewsDTO.getCategory()%>
                     </td>
                 </tr>
                  <tr>
                 <td><B>Post Name:</B></td>
-                <td><B><INPUT TYPE="text" name="postname" value="<%=jaddnewsDTO.getPostname()%>" /></B></td>
+                <td><%=jaddnewsDTO.getPostname()%>" </td>
             </tr>
             <tr>
                 <td><B>Description:</B></td>
-                <td><B><INPUT TYPE="text" name="desc" value="<%=jaddnewsDTO.getDesc()%>" /></B></td>
+                <td><%=jaddnewsDTO.getDesc()%></td>
             </tr>
             <tr>
                 <td><B>Location:</B></td>
-                <td><B><INPUT TYPE="text" name="location" value="<%=jaddnewsDTO.getLocation()%>" /></B></td>
+                <td><%=jaddnewsDTO.getLocation()%></td>
             </tr>
             <tr>
                 <td><B>Key Word:</B></td>
-                <td><B><INPUT TYPE="text" name="keyword" value="<%=jaddnewsDTO.getKeyword()%>" /></B></td>
+                <td><B><%=jaddnewsDTO.getKeyword()%></td>
             </tr>
             
             <tr>
                 <td><B>Image Associated:</B></td>
-                <td><B><INPUT TYPE="img" name="image" value="<%=jaddnewsDTO.getImage()%>" /></B></td>
+                <td><%=jaddnewsDTO.getImage()%></td>
             </tr>
             
             </table>
-            </form>
+            </form> 
             </div>     
             </section>
             </div>

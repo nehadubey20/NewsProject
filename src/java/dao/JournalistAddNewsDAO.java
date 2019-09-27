@@ -30,7 +30,7 @@ import javax.servlet.http.HttpServlet;
  */
 @WebServlet(name = "JournalistAddNewsDAO", urlPatterns = {"/JournalistAddNewsDAO"})
 public class JournalistAddNewsDAO extends HttpServlet {
-    public List<JournalistDTO> getAllUserData()
+ /*  public List<JournalistDTO> getAllUserData()
     {
         List<JournalistDTO> listOfAllUser=new ArrayList<JournalistDTO>();
         
@@ -62,7 +62,7 @@ public class JournalistAddNewsDAO extends HttpServlet {
         }
         return listOfAllUser;
     }
-  
+  */
     public JAddNewsDTO getSpecificUserData(String postname)
     {
         JAddNewsDTO jAddNewsDTO=null;
@@ -71,7 +71,7 @@ public class JournalistAddNewsDAO extends HttpServlet {
         {
         Statement st=DBConnector.getStatement();
         
-    String query="Select * from jaddnews where postname='"+postname+"'";
+        String query="Select * from jaddnews where postname='"+postname+"'";
           //String query="Select * from jaddnews where username='"+username+"''";
       
         ResultSet rs=st.executeQuery(query);

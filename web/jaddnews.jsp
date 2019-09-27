@@ -3,7 +3,7 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Journalist profile</title>
+		<title>Journalist add news</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -42,7 +42,7 @@
                         <tr>
                 <td><B>Username:</B></td>
                 <td><B><%=journalistDTO.getUsername()%></b>
-                    <INPUT TYPE="hidden" name="empid" value="<%=journalistDTO.getUsername()%>" />
+                    <INPUT TYPE="hidden" name="username" value="<%=journalistDTO.getUsername()%>" />
                 </td>
             </tr>
                        <tr>
