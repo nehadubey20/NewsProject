@@ -7,15 +7,9 @@ package dao;
 
 import db.DBConnector;
 import dto.JAddNewsDTO;
-import dto.JournalistDTO;
-//import dto.JournalistDTO;
-//import java.io.IOException;
-//import java.io.PrintWriter;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.List;
 //import java.util.ArrayList;
 //import java.util.List;
 //import javax.servlet.ServletException;
@@ -65,13 +59,13 @@ public class JournalistAddNewsDAO extends HttpServlet {
   */
     public JAddNewsDTO getSpecificUserData(String postname)
     {
-        JAddNewsDTO jAddNewsDTO=null;
+        JAddNewsDTO jAddNewsDTO=new JAddNewsDTO();
         
         try
         {
         Statement st=DBConnector.getStatement();
         
-        String query="Select * from jaddnews where postname='"+postname+"'";
+        String query="Select * from jaddnews where postname='fashion'";
           //String query="Select * from jaddnews where username='"+username+"''";
       
         ResultSet rs=st.executeQuery(query);
